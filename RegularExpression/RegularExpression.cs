@@ -66,7 +66,8 @@ namespace RegularExpression
         //-------------Mobile Number--------//
         public static string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
         //----------Method Starts Here------------//
-        public void ValidateMobileNum(string mobile) // this method used for the validating mobile number
+        // this method used for the validating mobile number
+        public void ValidateMobileNum(string mobile) 
         {
             if (Regex.IsMatch(mobile, MobileNum))
             {
