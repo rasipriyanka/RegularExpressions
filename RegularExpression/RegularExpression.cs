@@ -42,6 +42,24 @@ namespace RegularExpression
             {
                 Console.WriteLine("{0} is not valid", lastName);
             }
+        }
+            //----------Method Ends here-------------//
+
+            // Validating Email
+        public static string EmailAddress = @"^([A-Za-z0-9]*\.[A-Za-z0-9]*)@([A-Za-z0-9]*)((\.(\w){2,3})+)$";
+        //----------Method Starts Here------------//
+        public void ValidateEmailAddress(string email)//-Validating the EmailAddres
+        {
+            if (Regex.IsMatch(email, EmailAddress))
+            {
+                Console.WriteLine("{0} is valid", email);
+                Console.WriteLine("Email :", email);
+
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid");
+            }
             //----------Method Ends here-------------//
         }
     }

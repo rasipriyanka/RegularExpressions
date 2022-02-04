@@ -12,6 +12,9 @@ namespace RegularExpression
             regularExpressions.ValidateFirstName("Rasi");
             RegularExpression regularExpressions1 = new RegularExpression();
             regularExpressions1.ValidateLastName("Priyanka");
+            RegularExpression regularExpressions2 = new RegularExpression();
+            regularExpressions1.ValidateLastName("rasi.priyanka@bridgelabz.com");
+
         }
     }
 }
