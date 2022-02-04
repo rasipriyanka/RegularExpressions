@@ -7,12 +7,14 @@ using System.Text.RegularExpressions;
 namespace RegularExpression
 {
     //--------Class-------//
-    class RegularExpression
+    internal class RegularExpression
     {
+        //----------First Name-------------//
         public static string FirstName = "^[A-Z][A-Z a-z]{3,}$";
         //  method is used for validating first name
         //----------Method Starts------------//
-        public void ValidateFirstName(string firstName) 
+        public void ValidateFirstName(string firstName)
+
         {
             if (Regex.IsMatch(firstName, FirstName))
             {
@@ -24,5 +26,29 @@ namespace RegularExpression
             }
             //----------Method Ends here-------------//
         }
+
+        //-----------------Last Name---------------//
+        public static string LastName = "^[A-Z][A-Z a-z]{3,}$";
+        //  method is used for validating first name
+        //----------Method Starts------------//
+        public void ValidateLastName(string lastName)
+
+        {
+            if (Regex.IsMatch(lastName, LastName))
+            {
+                Console.WriteLine("{0} is valid", lastName);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", lastName);
+            }
+            //----------Method Ends here-------------//
+        }
     }
 }
+
+
+
+           
+       
+
