@@ -13,7 +13,9 @@ namespace RegularExpression
             RegularExpression regularExpressions1 = new RegularExpression();
             regularExpressions1.ValidateLastName("Priyanka");
             RegularExpression regularExpressions2 = new RegularExpression();
-            regularExpressions1.ValidateLastName("rasi.priyanka@bridgelabz.com");
+            regularExpressions1.ValidateEmailAddress("rasi.priyanka@bridgelabz.com");
+            RegularExpression regularExpressions3 = new RegularExpression();
+            regularExpressions3.ValidateMobileNum("+91 9326547892");
 
         }
     }
