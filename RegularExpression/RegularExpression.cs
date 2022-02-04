@@ -97,7 +97,24 @@ namespace RegularExpression
             }
             //----------Method Ends here-------------//
         }
+        //-----------Upper Case----------//
+        public static string UpperCase = @"^(?=.*[A-Z])[A-Za-z0-9]{8,}$";
+        // this method used for the validating password atleast one upper case 
+        //---------Method Starts-------------//
+        public void ValidateUpperCase(string password)
+        {
+            if (Regex.IsMatch(password, UpperCase))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :"+ password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
 
+            }
+            //-------Method Ends-------------//
+        }
     }
 }
 

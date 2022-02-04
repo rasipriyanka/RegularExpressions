@@ -18,7 +18,8 @@ namespace RegularExpression
             regularExpressions3.ValidateMobileNum("+91 9326547896");
             RegularExpression regularExpressions4 = new RegularExpression();
             regularExpressions4.ValidatePassWord("Rasi5678");
-
+            RegularExpression regularExpressions5 = new RegularExpression();
+            regularExpressions5.ValidateUpperCase("RasiPriyanka");
         }
     }
 }
