@@ -10,18 +10,13 @@ namespace RegularExpression
             //--------------Obj Creation-------------//
             RegularExpression regularExpressions = new RegularExpression();
             regularExpressions.ValidateFirstName("Rasi");
-            RegularExpression regularExpressions1 = new RegularExpression();
-            regularExpressions1.ValidateLastName("Priyanka");
-            RegularExpression regularExpressions2 = new RegularExpression();
-            regularExpressions1.ValidateEmailAddress("rasi.priyanka@bridgelabz.com");
-            RegularExpression regularExpressions3 = new RegularExpression();
-            regularExpressions3.ValidateMobileNum("+91 9326547896");
-            RegularExpression regularExpressions4 = new RegularExpression();
-            regularExpressions4.ValidatePassWord("Rasi5678");
-            RegularExpression regularExpressions5 = new RegularExpression();
-            regularExpressions5.ValidateUpperCase("RasiPriyanka");
-            RegularExpression regularExpressions6 = new RegularExpression();
-            regularExpressions6.ValidateAtleastOneNumber("RasiPriyanka123");
+             regularExpressions.ValidateLastName("Priyanka");
+            regularExpressions.ValidateEmailAddress("rasi.priyanka@bridgelabz.com");
+            regularExpressions.ValidateMobileNum("+91 9326547896");
+            regularExpressions.ValidatePassWord("Rasi5678");
+            regularExpressions.ValidateUpperCase("RasiPriyanka");
+            regularExpressions.ValidateAtleastOneNumber("RasiPriyanka123");
+            regularExpressions.ValidateSpecialChar("Rasipendela@43");
         }
     }
 }

@@ -113,7 +113,7 @@ namespace RegularExpression
                 Console.WriteLine("{0} is not valid", password);
 
             }
-            
+
 
         }
         //-------Method Ends-------------//
@@ -138,14 +138,31 @@ namespace RegularExpression
 
 
         }
-        //-------Method Ends-------------//
+        //-------Method Ends--------------//
 
 
+        public static string SpecialChar = @"^(?=.*[@$!%*#?&])[a-zA-Z0-9@$!%*#?&]{8,}$";
+        // this method used for the validating password atleast one special char
+        //--------Method starts---------------//
+        public void ValidateSpecialChar(string password) 
+        {
+            if (Regex.IsMatch(password, SpecialChar))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :" + password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid");
 
+
+            }
+
+
+            //---------Method Ends--------------//
+
+        }
     }
-
-
-
 }
 
 
