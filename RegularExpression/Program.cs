@@ -11,7 +11,7 @@ namespace RegularExpression
             RegularExpression regularExpressions = new RegularExpression();
             regularExpressions.ValidateFirstName("Rasi");
             RegularExpression regularExpressions1 = new RegularExpression();
-            regularExpressions1.ValidateFirstName("Priyanka");
+            regularExpressions1.ValidateLastName("Priyanka");
         }
     }
 }
