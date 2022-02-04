@@ -20,6 +20,8 @@ namespace RegularExpression
             regularExpressions4.ValidatePassWord("Rasi5678");
             RegularExpression regularExpressions5 = new RegularExpression();
             regularExpressions5.ValidateUpperCase("RasiPriyanka");
+            RegularExpression regularExpressions6 = new RegularExpression();
+            regularExpressions6.ValidateAtleastOneNumber("RasiPriyanka123");
         }
     }
 }

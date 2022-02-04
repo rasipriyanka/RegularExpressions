@@ -113,10 +113,41 @@ namespace RegularExpression
                 Console.WriteLine("{0} is not valid", password);
 
             }
-            //-------Method Ends-------------//
+            
+
         }
+        //-------Method Ends-------------//
+
+
+        //-----------Number----------//
+        public static string Number = @"^(?=.*[0-9])[A-Za-z0-9]{8,}$";
+        // this method used for the validating password atleast one Number
+        //---------Method Starts-------------//
+        public void ValidateAtleastOneNumber(string password)
+        {
+            if (Regex.IsMatch(password, Number))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :"+ password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
+
+            }
+
+
+        }
+        //-------Method Ends-------------//
+
+
+
     }
+
+
+
 }
+
 
 
 
